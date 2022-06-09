@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/no', function () {
     return view('layouts.app');
 });
 
-Route::get('/comics', function () {
+Route::get('/', function () {
     $comics = config('db');
-    dd($comics);
+    //dd($comics);
     return view('comics', compact('comics'));
 })->name('comics');

@@ -16,14 +16,18 @@
 </head>
 
 <body>
-    <header id="site_header"></header>
-    <!-- /#site_header -->
+    @include('partials.header')
+    @include('partials.navbar')
+
     <main class="" id="site_main">
+        @include('partials.jumbotron')
         @yield('comics')
+        @include('partials.banner')
     </main>
     <!-- /#site_main -->
-    <footer id="site_footer"></footer>
-    <!-- /#site_footer -->
+
+    @include('partials.footer')
+    
 
     <script src="{{asset('js/app.js')}}"></script>
 </body>
