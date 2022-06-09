@@ -22,3 +22,11 @@ Route::get('/', function () {
     //dd($comics);
     return view('comics', compact('comics'));
 })->name('comics');
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
+Route::get('/movies', function () {
+    return view('movies');
+})->name('movies');
