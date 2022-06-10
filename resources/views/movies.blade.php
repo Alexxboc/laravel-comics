@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
-
-    <h1>MOVIES</h1>
- 
+@section('movies_title')
+<h1>MOVIES</h1>
+@endsection
