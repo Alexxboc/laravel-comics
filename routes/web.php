@@ -61,7 +61,7 @@ Route::get('/shop', function () {
     return 'shop';
 })->name('shop');
 
-Route::get('/{id}', function ($id) {
+Route::get('/comic/{id}', function ($id) {
     $comics = config('db');
     //dd(count($comics));
     if ($id >= 0 && is_numeric($id) && $id < count($comics)) {
