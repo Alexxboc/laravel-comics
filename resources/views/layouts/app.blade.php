@@ -24,7 +24,7 @@
         @yield('comics')
         @yield('character_title')
         @yield('movies_title')
-        @include('partials.banner')
+
     </main>
     <!-- /#site_main -->
 

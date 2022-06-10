@@ -94,7 +94,9 @@ h1 {
 /* Jumbotron */
 .jumbotron {
   background-image: url("../img/jumbotron.jpg");
-  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
 }
 
 /* Section Comics */

@@ -20,8 +20,8 @@ Route::get('/no', function () {
 Route::get('/', function () {
     $comics = config('db');
     //dd($comics);
-    return view('comics', compact('comics'));
-})->name('comics');
+    return view('comics.index', compact('comics'));
+})->name('comics.index');
 
 Route::get('/characters', function () {
     return view('characters');
