@@ -23,6 +23,20 @@ Route::get('/', function () {
     return view('comics.index', compact('comics'));
 })->name('comics.index');
 
+Route::get('/{id}', function ($id) {
+    $comics = config('db');
+    //dd(count($comics));
+    if ($id >= 0 && is_numeric($id) && $id < count($comics)) {
+        dd($id);
+        //dd($products[$id]);
+        $comic = $comics[$id];
+        return view('comics.show', compact('comic'));
+    } else {
+        //dd('Abort! 404');
+        abort(404);
+    }
+})->name('comics.show');
+
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');

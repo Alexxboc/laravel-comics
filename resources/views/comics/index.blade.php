@@ -10,19 +10,23 @@
             <a href="#">current series</a>
         </div>
         <div class="row">
-            @foreach($comics as $comic)
+            @foreach($comics as $index => $comic)
             <div class="col-6">
-                <div class="card">
-                    <div class="img_container">
-                        <img src="{{$comic['thumb']}}" alt="">
+                <a href="{{route('comics.show', $index)}}">
+                    <div class="card">
+                        <div class="img_container">
+                            <img src="{{$comic['thumb']}}" alt="">
+                        </div>
+                        <!-- /.img_container -->
+                        <div class="title">
+                            <span>{{$comic['series']}}</span>
+                        </div>
+                        <!-- /.title -->
                     </div>
-                    <!-- /.img_container -->
-                    <div class="title">
-                        <span>{{$comic['series']}}</span>
-                    </div>
-                    <!-- /.title -->
-                </div>
-                <!-- /.card -->
+                    <!-- /.card -->
+                </a>
+                <!-- /. single_comic_link -->
+
             </div>
             <!-- /.col-6 -->
             @endforeach
