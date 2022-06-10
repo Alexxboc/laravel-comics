@@ -173,9 +173,51 @@ h1 {
   height: 90px;
   background-color: #0282F9;
 }
+.divider img {
+  margin-top: -14rem;
+  border: 1px solid white;
+}
 
 .comic_details {
   padding: 5rem 0;
+}
+.comic_details .col-2.left {
+  width: 70%;
+}
+.comic_details .col-2.right {
+  width: 30%;
+  text-align: end;
+}
+.comic_details .comic_title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.comic_details .row_left {
+  width: 80%;
+  background-color: lightgreen;
+  padding: 1rem 1.5rem;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+.comic_details .row_right {
+  width: 20%;
+  background-color: lightgreen;
+  padding: 1rem 1.5rem;
+  border: 1px solid black;
+  justify-content: center;
+}
+.comic_details .navigator {
+  margin-bottom: 1rem;
+}
+.comic_details .availability {
+  text-transform: uppercase;
+}
+.comic_details .adv span {
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+}
+.comic_details .adv .img {
+  margin-top: 0.3rem;
 }
 
 /* Banner */

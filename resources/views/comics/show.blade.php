@@ -1,19 +1,23 @@
 @extends('layouts.app')
 
 @section('comics')
-<div class="divider"></div>
+<div class="divider">
+    <div class="container">
+        <img src="{{$comic['thumb']}}" alt="">
+    </div>
+    <!-- /.container -->
+
+</div>
 <!-- /.divider -->
 
 <section class="comic_details">
     <div class="container">
         <div class="row">
             <div class="col-2 left">
-                <div class="comic_title">
-                    {{$comic['title']}}
-                </div>
+                <h2 class="comic_title">{{$comic['title']}}</h2>
                 <!-- /.comic_title -->
-                <div class="navigator">
-                    <div class="row_left">
+                <div class="navigator d_flex">
+                    <div class="row_left d_flex">
                         <div class="price">
                             <span>U.S. Price</span>
                             <span>{{$comic['price']}}</span>
@@ -34,7 +38,7 @@
                     <!-- /.row_right -->
                 </div>
                 <!-- /.navigator -->
-                <p></p>
+                <p>{{$comic['description']}}</p>
             </div>
             <!-- /.col-2 left -->
             <div class="col-2 right">

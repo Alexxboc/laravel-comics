@@ -196,10 +196,52 @@ h1 {
 .divider {
     height: 90px;
     background-color: $dc-primary;
+    img {
+        margin-top: -14rem;
+        border: 1px solid white;
+    }
 }
 
 .comic_details {
     padding: 5rem 0;
+    .col-2.left {
+        width: 70%;
+    }
+    .col-2.right {
+        width: 30%;
+        text-align: end;
+    }
+    .comic_title {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .row_left {
+        width: 80%;
+        background-color: lightgreen;
+        padding: 1rem 1.5rem;
+        border: 1px solid black;
+        justify-content: space-between;
+    }
+    .row_right {
+        width: 20%;
+        background-color: lightgreen;
+        padding: 1rem 1.5rem;
+        border: 1px solid black;
+        justify-content: center;
+    }
+    .navigator {
+        margin-bottom: 1rem;
+    }
+    .availability {
+        text-transform: uppercase;
+    }
+    .adv span {
+        text-transform: uppercase;
+        padding-bottom: 0.25rem;
+    }
+    .adv .img {
+        margin-top: 0.30rem;
+    }
 }
 
 
