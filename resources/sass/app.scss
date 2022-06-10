@@ -50,8 +50,8 @@ a {
 }
 
 .active {
-    border-bottom: 3px solid $dc-primary;
-    color: $dc-primary;
+    border-bottom: 3px solid $dc-primary !important;
+    color: $dc-primary !important;
 }
 
 .d_flex {

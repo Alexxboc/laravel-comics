@@ -7,13 +7,13 @@
         <div class="header_menu">
             <ul>
                 <li>
-                    <a href="{{route('characters')}}">Characters</a>
+                    <a href="{{route('characters')}}" class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}">Characters</a>
                 </li>
                 <li>
-                    <a href="{{route('comics.index')}}">Comics</a>
+                    <a href="{{route('comics.index')}}" class="{{ Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' ? 'active' : '' }}">Comics</a>
                 </li>
                 <li>
-                    <a href="{{route('movies')}}">Movies</a>
+                    <a href="{{route('movies')}}" class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}">Movies</a>
                 </li>
                 <li>
                     <a href="{{route('TV')}}">TV</a>

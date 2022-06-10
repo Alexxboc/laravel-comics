@@ -39,8 +39,8 @@ a {
 }
 
 .active {
-  border-bottom: 3px solid #0282F9;
-  color: #0282F9;
+  border-bottom: 3px solid #0282F9 !important;
+  color: #0282F9 !important;
 }
 
 .d_flex {
