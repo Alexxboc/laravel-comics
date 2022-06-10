@@ -43,6 +43,10 @@ a {
   color: #0282F9;
 }
 
+.d_flex {
+  display: flex;
+}
+
 /* Mixin */
 /* Header */
 #site_header {
@@ -162,6 +166,16 @@ h1 {
   text-transform: uppercase;
   text-align: start;
   padding: 1rem 0;
+}
+
+/* Single Comic */
+.divider {
+  height: 90px;
+  background-color: #0282F9;
+}
+
+.comic_details {
+  padding: 5rem 0;
 }
 
 /* Banner */

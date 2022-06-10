@@ -27,8 +27,8 @@ Route::get('/{id}', function ($id) {
     $comics = config('db');
     //dd(count($comics));
     if ($id >= 0 && is_numeric($id) && $id < count($comics)) {
-        dd($id);
-        //dd($products[$id]);
+        //dd($id);
+        //dd($comics[$id]);
         $comic = $comics[$id];
         return view('comics.show', compact('comic'));
     } else {
