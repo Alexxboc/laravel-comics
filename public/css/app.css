@@ -47,6 +47,10 @@ a {
   display: flex;
 }
 
+.color_blue {
+  color: #0282F9 !important;
+}
+
 /* Mixin */
 /* Header */
 #site_header {
@@ -218,6 +222,25 @@ h1 {
 }
 .comic_details .adv .img {
   margin-top: 0.3rem;
+}
+
+/* section Artists */
+.artists {
+  padding: 2rem;
+  background-color: lightgray;
+}
+.artists .col-2.left {
+  padding-right: 3rem;
+}
+.artists .column_title,
+.artists .artists_list,
+.artists .writers_list,
+.artists .series_name,
+.artists .price,
+.artists .sale_date {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
 }
 
 /* Banner */

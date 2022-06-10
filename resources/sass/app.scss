@@ -58,6 +58,10 @@ a {
     display: flex;
 }
 
+.color_blue {
+    color: $dc-primary !important;
+}
+
 
 /* Mixin */
 
@@ -241,6 +245,27 @@ h1 {
     }
     .adv .img {
         margin-top: 0.30rem;
+    }
+}
+
+
+/* section Artists */
+
+.artists {
+    padding: 2rem;
+    background-color: lightgray;
+    .col-2.left {
+        padding-right: 3rem;
+    }
+    .column_title,
+    .artists_list,
+    .writers_list,
+    .series_name,
+    .price,
+    .sale_date {
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid black;
     }
 }
 
