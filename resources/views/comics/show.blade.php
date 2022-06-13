@@ -105,7 +105,7 @@
                 <!-- /.price -->
                 <div class="sale_date">
                     <span>U.S. Price:</span>
-                    <span>{{$comic['sale_date']}}</span>
+                    <span>{{DateTime::createFromFormat('Y-m-d',$comic['sale_date'])->format('M d Y')}}</span> 
                 </div>
                 <!-- /.sale_date -->
             </div>
